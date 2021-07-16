@@ -73,15 +73,15 @@ educoin.addBlock(new Block(1, "10/01/2009", { amount: 10 }));
 educoin.addBlock(new Block(2, "15/01/2009", { amount: 5 }));
 
 console.log('Is blockchain valid? ' + educoin.isChainValid());
-//console.log(JSON.stringify(educoin, null, 4));
+console.log(JSON.stringify(educoin, null, 4));
 
 educoin.chain[1].data = { amount: 100 };
 console.log('Is blockchain valid? ' + educoin.isChainValid());
-//console.log(JSON.stringify(educoin, null, 4));
+console.log(JSON.stringify(educoin, null, 4));
 
 educoin.chain[1].hash = educoin.chain[1].calculateHash();
 console.log('Is blockchain valid? ' + educoin.isChainValid());
-//console.log(JSON.stringify(educoin, null, 4));
+console.log(JSON.stringify(educoin, null, 4));
 
 console.log("Source: https://youtu.be/zVqczFZr124");
 console.log("End of Part 1");
